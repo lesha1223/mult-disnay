@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="knopka.css" />
+  </head>
+  <body>
+<div id="cursor" class="Cursor">
+</div>
+    <header>
+      <h1>Disney Cartoons</h1>
+      <nav>
+        <a href="#" class="selected">Home</a> | <a href="#">Catalog</a> |
+        <a href="#">Contacts</a> |
+        <a href="#">Search</a>
+      </nav>
+      <p>Information of your favorite cartoons</p>
+    </header>
+    <main>
+      <div class="content">
+        <div class="films">
+          <h2>Popular Cartoon Films</h2>
+          <div id="filmGallery">
+            <button id="prev" onclick="changeFilm(-1)">❮</button>
+            <div id="filmDisplay">
+              <div class="img-container">
+              <img src="" alt="film" id="filmImage">
+              <button class="watch button" type="button">Watch</button>
+            </div>
+              <p id="filmDescription"></p>
+            </div>
+              <button id="next" onclick="changeFilm(1)">❯</button>
+          </div>
+        </div> 
+        <div class="series">
+          <h2>Popular Cartoon Series</h2>
+          <div id="seriesGallery">
+            <button id="prev" onclick="changeSeries(-1)">❮</button>
+            <div id="seriesDisplay">
+              <img src="" alt="series" id="seriesImage">
+              <button class="watch button" type="button">Watch</button>
+              <p id="seriesDescription"></p>
+            </div>
+              <button id="next" onclick="changeSeries(1)">❯</button>
+          </div>
+        </div>
+        <div class="news">
+          <h2>New Cartoons</h2>
+        </div>
+      </div> 
+    </main>
+    <script src="sitr.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+header{
+    background-color: rgb(81, 66, 253);
+    color: rgb(255, 132, 241);
+    text-align: center;
+}
+nav{
+    border:solid 3px rgb(255, 131, 207);
+    border-radius:10px;
+    padding: 10px;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 15px;
+}
+body{
+    background-color: rgb(81, 66, 253);
+    font-family: "Montserrat", sans-serif;
+}
+.selected{
+    font-size: 20px;
+    color: rgb(186, 168, 250);
+    font-weight:bold ;
+}
+nav a:hover{
+    color: rgb(195, 130, 255);
+    font-size: 130%;
+    text-decoration: underline;
+}
+.films{
+    text-align: center;
+    color: #e292ff;
+}
+.series{
+   text-align: center;
+   color: #e292ff;   
+}
+.news{
+   text-align: center;
+   color: #e292ff;
+}
+#filmGallery,#seriesGallery{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#filmDisplay,#seriesDisplay{
+    text-align: center;
+}
+#filmImage,#seriesImage{
+    width:1280px; 
+    height: 720px;
+    border-radius: 40px;
+    box-shadow: 0 0 50px 2px rgb(167, 119, 230);
+}
+#prev,#next{
+    color: hotpink;
+    font-size: 100px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.img-container{
+    position: relative;
+    text-align: center;
+}
+.watch{
+    position: absolute;
+    bottom: 100px;
+    left: 5%;
+    transform: translateX(-50%);
+}
