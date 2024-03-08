@@ -39,15 +39,15 @@ nav a:hover{
    text-align: center;
    color: #e292ff;
 }
-#filmGallery,#seriesGallery{
+#filmGallery,#seriesGallery,#newsGallery {
     display:flex;
     align-items: center;
     justify-content: space-around;
 }
-#filmDisplay,#seriesDisplay{
+#filmDisplay,#seriesDisplay,#newsDisplay{
     text-align: center;
 }
-#filmImage,#seriesImage{
+#filmImage,#seriesImage,#newsImage{
     width:1280px; 
     height: 720px;
     border-radius: 40px;

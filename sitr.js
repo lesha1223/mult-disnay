@@ -42,3 +42,25 @@ function changeSeries(step) {
   displaySeries(currentSeriesIndex);
 }
 displaySeries(currentSeriesIndex);
+
+let currentNewsIndex = 0;
+const news = [
+  { src: "img/lk.jpg", description: "hggh" },
+  { src: "img/luka.jpg", description: "hgih" },
+  { src: "img/jv.jpg", description: "hfh" },
+];
+function displayNews(index) {
+  const { src, description } = news[index];
+  document.getElementById("newsImage").src = src;
+  document.getElementById("newsDescription").textContent = description;
+}
+function changeNews(step) {
+  currentNewsIndex += step;
+  if (currentNewsIndex >= news.length) {
+    currentNewsIndex = 0;
+  } else if (currentFilmIndex < 0) {
+    currentNewsIndex =news.length - 1;
+  }
+  displayNews(currentNewsIndex);
+}
+displayNews(currentNewsIndex);
