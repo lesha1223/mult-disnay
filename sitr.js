@@ -67,3 +67,29 @@ function changeNews(step) {
   displayNews(currentNewsIndex);
 }
 displayNews(currentNewsIndex);
+
+let currentArticleIndex = 0;
+const article  = [
+  {
+    src: "img/io2.jpg",
+    description:
+      "Turning Red is a 2022 American computer-animated fantasy comedy film produced by Pixar Animation Studios and distributed by Walt Disney Studios Motion Pictures. It was directed by Domee Shi (in her feature directorial debut) and produced by Lindsey Collins, from a screenplay written by Shi and Julia Cho, and a story by Shi, Cho, and Sarah Streicher.",
+  },
+  { src: "img/leki.jpg", description: "The Secret Life of Pets is a 2016 American animated comedy film produced by Illumination Entertainment and distributed by Universal Pictures. It was directed by Chris Renaud, co-directed by Yarrow Cheney, and produced by Chris Meledandri and Janet Healy, from a screenplay written by Brian Lynch and the writing team of Cinco Paul and Ken Daurio.[6][1] The film stars the voices of Louis C.K., Eric Stonestreet, Jenny Slate, Kevin Hart, Ellie Kemper, Lake Bell, Dana Carvey, Hannibal Buress, Bobby Moynihan, Steve Coogan, and Albert Brooks." },
+  { src: "img/moana.jpg", description: "Toy Story 4 is a 2019 American animated comedy-drama film produced by Pixar Animation Studios for Walt Disney Pictures. It is the fourth installment in Pixar's Toy Story series and the sequel to Toy Story 3 (2010)." },
+];
+function displayArticle(index) {
+  const { src, description } = article[index];
+  document.getElementById("articleImage").src = src;
+  document.getElementById("articleDescription").textContent = description;
+}
+function changeArticle(step) {
+  currentArticleIndex += step;
+  if (currentArticleIndex >= article.length) {
+    currentArticleIndex = 0;
+  } else if (currentArticleIndex < 0) {
+    currentArticleIndex = article.length - 1;
+  }
+  displayArticle(currentArticleIndex);
+}
+displayArticle(currentArticleIndex);

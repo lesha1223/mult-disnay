@@ -1,10 +1,10 @@
 header{
     background-color: rgb(81, 66, 253);
-    color: rgb(255, 132, 241);
+    color: hotpink;
     text-align: center;
 }
 nav{
-    border:solid 3px rgb(255, 131, 207);
+    border:solid 3px hotpink;
     border-radius:10px;
     padding: 10px;
 }
@@ -19,7 +19,7 @@ body{
 }
 .selected{
     font-size: 20px;
-    color: rgb(186, 168, 250);
+    color: hotpink;
     font-weight:bold ;
 }
 nav a:hover{
@@ -29,20 +29,21 @@ nav a:hover{
 }
 .films{
     text-align: center;
-    color: #e292ff;
+    color: hotpink;
 }
 .series{
    text-align: center;
-   color: #e292ff;   
+   color: hotpink;   
 }
 .news{
    text-align: center;
-   color: #e292ff;
+   color: hotpink;
 }
 #filmGallery,#seriesGallery,#newsGallery {
     display:flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0px;
 }
 #filmDisplay,#seriesDisplay,#newsDisplay{
     text-align: center;
@@ -76,6 +77,7 @@ nav a:hover{
 .contacts{
     display:flex;
     align-items: center;
+    color: hotpink;
 }
 .mail{
     width: 50%;
@@ -85,7 +87,13 @@ nav a:hover{
 }
 .palka{
     width: 5px;
-    background-color: #e292ff;
-    height: 80%;
-    border-radius: 3px;  
+    background-color:hotpink;
+    height: 50px;
+    border-radius: 3px;
+}
+.footerSection h3{
+    text-align: center;   
+}
+.footerSection{
+    color: hotpink;
 }

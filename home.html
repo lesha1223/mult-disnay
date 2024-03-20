@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disney Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="knopka.css" />
   </head>
   <body>
-<div id="cursor" class="Cursor">
-</div>
+    <div id="cursor" class="Cursor"></div>
     <header>
       <h1>Disney Cartoons</h1>
       <nav>
@@ -30,24 +32,24 @@
             <button id="prev" onclick="changeFilm(-1)">❮</button>
             <div id="filmDisplay">
               <div class="img-container">
-              <img src="" alt="film" id="filmImage">
-              <button class="watch button" type="button">Watch</button>
-            </div>
+                <img src="" alt="film" id="filmImage" />
+                <button class="watch button" type="button">Watch</button>
+              </div>
               <p id="filmDescription"></p>
             </div>
-              <button id="next" onclick="changeFilm(1)">❯</button>
+            <button id="next" onclick="changeFilm(1)">❯</button>
           </div>
-        </div> 
+        </div>
         <div class="series">
           <h2>Popular Cartoon Series</h2>
           <div id="seriesGallery">
             <button id="prev" onclick="changeSeries(-1)">❮</button>
             <div id="seriesDisplay">
-              <img src="" alt="series" id="seriesImage">
+              <img src="" alt="series" id="seriesImage" />
               <button class="watch button" type="button">Watch</button>
               <p id="seriesDescription"></p>
             </div>
-              <button id="next" onclick="changeSeries(1)">❯</button>
+            <button id="next" onclick="changeSeries(1)">❯</button>
           </div>
         </div>
         <div class="news">
@@ -55,21 +57,42 @@
           <div id="newsGallery">
             <button id="prev" onclick="changeNews(-1)">❮</button>
             <div id="newsDisplay">
-              <img src="" alt="news" id="newsImage">
+              <img src="" alt="news" id="newsImage" />
               <button class="watch button" type="button">Watch</button>
               <p id="newsDescription"></p>
+            </div>
+            <button id="next" onclick="changeNews(1)">❯</button>
+          </div>
         </div>
-        <button id="next" onclick="changeNews(1)">❯</button>
-      </div> 
+        <div class="article">
+          <h2>Articles</h2>
+          <div id="article">
+            <button id="prev" onclick="changeArticle(-1)">❮</button>
+            <div id="article">
+              <div class="img-container">
+                <img src="" alt="article" id="ImageArticle" />
+                <button class="watch button" type="button">Watch</button>
+              </div>
+              <p id="articleDescription"></p>
+            </div>
+            <button id="next" onclick="changeArticle(1)">❯</button>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footerSection">
         <h3>About us</h3>
-        <p>Welcome to Disnay Cartoons, your ultimate destination for exploring
-         the enchantment of Disney cartoons! As passionate Disney aficionados, we're dedicated to offering a vast collection of beloved classics and 
-         modern hits for fans of all ages. Our mission is to provide an accessible and joyful experience, enriching your days with the magic of Disney. Thank you for choosing us to embark 
-         on this magical journey together. For feedback or inquiries, feel free to reach out through our contact form.
-         Let the magic begin!</p>
+        <p>
+          Welcome to Disnay Cartoons, your ultimate destination for exploring
+          the enchantment of Disney cartoons! As passionate Disney aficionados,
+          we're dedicated to offering a vast collection of beloved classics and
+          modern hits for fans of all ages. Our mission is to provide an
+          accessible and joyful experience, enriching your days with the magic
+          of Disney. Thank you for choosing us to embark on this magical journey
+          together. For feedback or inquiries, feel free to reach out through
+          our contact form. Let the magic begin!
+        </p>
       </div>
       <div class="contacts">
         <div class="mail">
@@ -78,14 +101,12 @@
         </div>
         <div class="palka"></div>
         <div class="social">
-          <a href="#"><img src="/img/facebook.png" alt="facebook"></a>
-          <a href="#"><img src="/img/instagram.png" alt="instagram"></a>
-          <a href="#"><img src="/img/pinterest.png" alt="pinterest"></a>
-          <a href="#"><img src="/img/twitter.png" alt="twitter"></a>
+          <a href="#"><img src="/img/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="/img/instagram.png" alt="instagram" /></a>
+          <a href="#"><img src="/img/pinterest.png" alt="pinterest" /></a>
+          <a href="#"><img src="/img/twitter.png" alt="twitter" /></a>
         </div>
       </div>
-
-
     </footer>
     <script src="sitr.js"></script>
   </body>
