@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="knopka.css" />
   </head>
   <body>
-    <div id="cursor" class="Cursor"></div>
     <header>
       <h1>Disney Cartoons</h1>
       <nav>
@@ -66,14 +65,15 @@
         </div>
         <div class="article">
           <h2>Articles</h2>
-          <div id="article">
+          <div id="articleGallery">
             <button id="prev" onclick="changeArticle(-1)">❮</button>
-            <div id="article">
+            <div id="articleDisplay">
               <div class="img-container">
-                <img src="" alt="article" id="ImageArticle" />
-                <button class="watch button" type="button">Watch</button>
+                <img src="" alt="article" id="articleImage" onclick="openArticle(currentArticleIndex)"/>
               </div>
+              <div onclick="openArticle(currentArticleIndex)">
               <p id="articleDescription"></p>
+              </div>
             </div>
             <button id="next" onclick="changeArticle(1)">❯</button>
           </div>
