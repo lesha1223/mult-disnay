@@ -59,7 +59,7 @@ function changeSeries(step) {
   currentSeriesIndex += step;
   if (currentSeriesIndex >= series.length) {
     currentSeriesIndex = 0;
-  } else if (currentFilmIndex < 0) {
+  } else if (currentSeriesIndex < 0) {
     currentSeriesIndex = series.length - 1;
   }
   displaySeries(currentSeriesIndex);
@@ -93,7 +93,7 @@ function changeNews(step) {
   currentNewsIndex += step;
   if (currentNewsIndex >= news.length) {
     currentNewsIndex = 0;
-  } else if (currentFilmIndex < 0) {
+  } else if (currentNewsIndex < 0) {
     currentNewsIndex = news.length - 1;
   }
   displayNews(currentNewsIndex);
